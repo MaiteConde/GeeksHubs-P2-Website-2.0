@@ -1,96 +1,168 @@
 * {
   margin: 0;
-
+  padding: 0;
+  font-family: 'Kosugi', 'Poppins';
 }
 
 header {
-
-  font-family:'Montserrat', sans-serif;
-  box-shadow: -6px 13px 52px 3px rgba(0,0,0,0.47);
-  width: 100%;
-  position: fixed;
-  background-image: url(/Images/floral-1814372_1920.jpg);
-  text-align: center;
-
+  box-shadow: -6px 13px 52px 3px rgba(0, 0, 0, 0.47);
+  background-image: url(../Images/floral-1814372_1920.jpg);
+  opacity: 0.8;
+  margin-bottom: 70px;
 }
 
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-image: url(/Images/workplace-2303851_1920.jpg);
+  font-family: 'Poppins', ;
+  height: 100vh;
+  background-image: url(../Images/workplace-2303851_1920.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  
+
 }
 
-div {
-  padding: 50px;
-  font-size: 18px;
-  text-align: center;
-  
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-basis: 50%;
 }
+
+li {
+  list-style: none;
+  display: inline;
+  font-weight: bold;
+}
+
+li:hover {
+  text-decoration: underline black;
+}
+
+.pestaña {
+  color: coral;
+  text-decoration: underline coral;
+}
+
+.mai {
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
+  font-size: 1.4em;
+}
+
+.contenido {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 30% 4% 30%;
+}
+
 
 a {
   text-decoration: none;
   color: black;
 }
 
-#cosas {
-  display: inline;
-  overflow: auto;
+form {
+
+  width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: auto;
+  background-color: rgb(241, 240, 240);
+  box-shadow: -6px 13px 52px 3px rgba(0, 0, 0, 0.47);
 }
 
-h {
-  margin-bottom: 10px;
-}
-
-form{
-	width:300px;
-	padding:10px;
-	border-radius:10px;
-	margin: auto;
-  background-color:rgb(241, 240, 240);
-  box-shadow: -6px 13px 52px 3px rgba(0,0,0,0.47);
-  
-}
-
-form label{
-	width:72px;
-  display:inline-block;
+form label {
+  width: 72px;
+  display: inline-block;
 }
 
 form input[type="text"],
-form input[type="email"]{
-	width:180px;
-  margin: 2px 3px 2px 2px;
-	border:1px solid #969191;
-	background-color:white;
-  display:inline-block;
-  border-radius:3px;
-  font-family:'Montserrat', sans-serif;
+form input[type="email"] {
+  width: 180px;
+  margin: 2px;
+  border: 1px solid #969191;
+  background-color: white;
+  display: inline-block;
+  border-radius: 3px;
 }
 
-form input[type="submit"]{
-	width:100%;
-	padding:8px 16px;
-	margin-top:15px;
-	border:1px solid #000;
-	border-radius:5px;
-	display:block;
-	color:#fff;
-  background-color:#000;
-} 
+form input[type="submit"] {
+  width: 100%;
+  padding: 8px 16px;
+  margin-top: 15px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: block;
+  color: pink;
+  background-color: #000;
+}
 
-textarea{
-	width:100%;
-	height:100px;
-	border:1px solid #615f5f;
-	border-radius:3px;
-	background-color:#f6f6f6;			
-	margin:8px 0;
-  display:block;
-  font-family:'Montserrat', sans-serif;
+textarea {
+  width: 98%;
+  height: 100px;
+  border: 1px solid #615f5f;
+  border-radius: 3px;
+  background-color: #f6f6f6;
+}
+
+footer {
+  width: 100%;
+  padding: 10px 0;
+  background-image: url(../Images/floral-1814372_1920.jpg);
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  opacity: 0.6;
+  align-items: center;
+}
+
+footer p {
+  margin: 0 2%;
+}
+
+.imagen {
+  opacity: 0.5;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: groove gainsboro;
+}
+
+.foto {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.imagen:hover {
+  transform: scale(1.2);
+  transition: all 500ms linear;
+}
+
+.gato {
+  width: 30px;
+  height: 30px;
+}
+
+span {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+span:hover {
+  background-size: 100% 88%;
 }
