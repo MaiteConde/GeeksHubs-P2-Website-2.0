@@ -27,7 +27,6 @@ Inglés nivel B2.</p>
 <img src="Images/address-book-2246432_1920.jpg" class="imagen">
 </div>`;
 const proyectos = `<div class="carrousel-contenedor">
-
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -37,14 +36,14 @@ const proyectos = `<div class="carrousel-contenedor">
     <div class="carousel-item active">
       <img src="Images/office-620817_1920.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Portfolio</h5>
+        <h5><a href="https://github.com/MaiteConde/Portfolio" target="_blank">Portfolio</a></h5>
         <p>Primer proyecto.</p>
       </div>
     </div>
     <div class="carousel-item">
       <img src="Images/office-620822_1920.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5>Portfolio 2.0</h5>
+        <h5><a href="https://github.com/MaiteConde/Portfolio-2.0" target="_blank">Portfolio 2.0 </a></h5>
         <p>Segundo proyecto.</p>
       </div>
     </div>
@@ -62,6 +61,8 @@ const proyectos = `<div class="carrousel-contenedor">
 </div>`
 
 
+
+const main = document.querySelector('main')
 window.addEventListener('load',()=>{
     if(window.location.hash==='#proyectos'){
         main.innerHTML =proyectos;
@@ -74,7 +75,8 @@ window.addEventListener('load',()=>{
         main.innerHTML =inicio;
     }
 })
-const main = document.querySelector('main')
+
+
 document.querySelector('.inicioButton').addEventListener('click',()=>{
     main.innerHTML = inicio;
     history.pushState({},'','#');
@@ -90,4 +92,8 @@ document.querySelector('.contactoButton').addEventListener('click',()=>{
 document.querySelector('.proyectosButton').addEventListener('click',()=>{
     main.innerHTML = proyectos;
     history.pushState({},'','#proyectos');
+})
+document.querySelector('.maiButton').addEventListener('click',()=>{
+  main.innerHTML = inicio;
+  history.pushState({},'','#inicio');
 })

@@ -4,9 +4,7 @@
   font-family: 'Montserrat', ;
 }
 
-
-body {
- 
+body { 
   font-family: 'Poppins', ;
   height: 100vh;
   background-image: url(../Images/apple-2568755_1920.jpg);
@@ -32,37 +30,8 @@ header {
   justify-content: flex-end;
 }
 
-.imagen {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border: groove black;
-}
-
-footer {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: black;
-  background-color: white;
-  box-shadow: -6px 13px 52px 3px rgba(0, 0, 0, 0.47);
-}
-
-footer p {
-margin-top: 15px;
-}
-
-.gato {
-  height: 30px;
-  width: 30px;
-  margin: 3px 0 0 10px;
-}
-
 .contenido {
-  display: flex;
+display: flex;
  flex-direction: column-reverse;
  align-items: flex-end;
  text-align: left;
@@ -80,6 +49,15 @@ margin-top: 15px;
   box-shadow: -6px 13px 52px 3px rgba(0, 0, 0, 0.47);
 }
 
+.imagen {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: groove black;
+  margin: 0 150px 40px 0; 
+  box-shadow: -6px 13px 52px 3px rgba(0, 0, 0, 0.47);
+}
+
 .formulario {
   display: flex;
   justify-content: flex-end;
@@ -87,7 +65,6 @@ margin-top: 15px;
 }
 
 form {
-
   width: 300px;
   padding: 10px;
   border-radius: 10px;
@@ -134,13 +111,42 @@ textarea {
   margin-top: 50px;
 }
 
-.imagen {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border: groove black;
-  margin: 0 150px 40px 0; 
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: black;
+  background-color: white;
   box-shadow: -6px 13px 52px 3px rgba(0, 0, 0, 0.47);
+}
+
+footer p {
+margin: 15px 0 15px 10px;
+}
+
+.gato {
+  height: 30px;
+  width: 30px;
+  margin: 3px 0 0 10px;
+}
+
+.carrousel-contenedor{
+  position: relative;
+  height: 85vh;
+}
+.carousel-inner img {
+  filter:blur(2px);
+  filter: grayscale(80%);
+  height: 90vh;
+}
+
+.carousel-inner a {
+  cursor: pointer;
+  color: white;
 }
 
 @media (max-width: 700px) {
@@ -158,6 +164,7 @@ textarea {
     border-radius: 20px;
     width: 80%;
     font-size: 10px;
+    margin-top: 10px;
   }
 
   .imagen {
@@ -175,17 +182,4 @@ textarea {
   }
 }
 
-.carrousel-contenedor{
-  position: relative;
-  height: 85vh;
-}
-.carousel-inner img {
-  filter:blur(2px);
-  filter: grayscale(80%);
-  height: 88vh;
-}
-
-carousel-control-prev {
-  height: 10px;
-}
 
