@@ -135,12 +135,14 @@ margin: 15px 0 15px 10px;
 }
 
 .carrousel-contenedor{
+  background-color: black;
   position: relative;
   height: 85vh;
 }
 .carousel-inner img {
   filter:blur(2px);
   filter: grayscale(80%);
+  opacity: 0.3;
   height: 90vh;
 }
 
