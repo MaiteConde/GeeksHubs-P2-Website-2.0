@@ -76,24 +76,15 @@ window.addEventListener('load',()=>{
     }
 })
 
+const changeMainSection = (section,hashPath)=>{
 
-document.querySelector('.inicioButton').addEventListener('click',()=>{
-    main.innerHTML = inicio;
-    history.pushState({},'','#');
-})
-document.querySelector('.skillsButton').addEventListener('click',()=>{
-    main.innerHTML =competencias;
-    history.pushState({},'','#competencias');
-})
-document.querySelector('.contactoButton').addEventListener('click',()=>{
-    main.innerHTML = contacto;
-    history.pushState({},'','#contacto');
-})
-document.querySelector('.proyectosButton').addEventListener('click',()=>{
-    main.innerHTML = proyectos;
-    history.pushState({},'','#proyectos');
-})
-document.querySelector('.maiButton').addEventListener('click',()=>{
-  main.innerHTML = inicio;
-  history.pushState({},'','#inicio');
-})
+  main.innerHTML = section;
+  document.querySelector('.navbar-collapse').classList.remove('show')
+  history.pushState({},'',hashPath);
+  window.scrollTo({top:0});
+}
+document.querySelector('.inicioButton').addEventListener('click',()=>changeMainSection(inicio,'#'))
+document.querySelector('.skillsButton').addEventListener('click',()=>changeMainSection(competencias,'#competencias'))
+document.querySelector('.contactoButton').addEventListener('click',()=>changeMainSection(contacto,'#contacto'))
+document.querySelector('.proyectosButton').addEventListener('click',()=>changeMainSection(proyectos,'#proyectos'))
+document.querySelector('.maiButton').addEventListener('click',()=>changeMainSection(inicio,'#inicio'))
