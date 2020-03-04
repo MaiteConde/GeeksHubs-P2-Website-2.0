@@ -77,7 +77,6 @@ window.addEventListener('load',()=>{
 })
 
 const changeMainSection = (section,hashPath)=>{
-
   main.innerHTML = section;
   document.querySelector('.navbar-collapse').classList.remove('show')
   history.pushState({},'',hashPath);

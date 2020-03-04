@@ -137,7 +137,7 @@ margin: 15px 0 15px 10px;
 .carrousel-contenedor{
   background-color: black;
   position: relative;
-  height: 85vh;
+  max-height: 85vh;
 }
 .carousel-inner img {
   filter:blur(2px);
